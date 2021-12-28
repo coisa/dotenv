@@ -6,6 +6,11 @@ services:
   php:
     type: php:7.4
     via: cli
+    build_as_root:
+      - docker-php-ext-enable xdebug
+    overrides:
+      environment:
+        XDEBUG_MODE: coverage
 
 tooling:
   composer:
