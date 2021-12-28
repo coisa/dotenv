@@ -1,0 +1,25 @@
+{
+    "name": "coisa/dotenv",
+    "description": "Autoload environment variables from a .env file",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Felipe Sayão Lobato Abreu",
+            "email": "github@felipeabreu.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "symfony/dotenv": ">=5.4"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "files": [
+            "src/autoload.php"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

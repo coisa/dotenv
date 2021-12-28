@@ -1,0 +1,13 @@
+# https://docs.lando.dev/
+
+name: dotenv
+
+services:
+  php:
+    type: php:7.4
+    via: cli
+
+tooling:
+  composer:
+    service: php
+    cmd: composer
