@@ -34,6 +34,7 @@ foreach ($autoloadFiles as $autoloadFile) {
 }
 
 $dotenv = new Dotenv();
+$dotenv->usePutenv();
 
 foreach ($dotenvFiles as $dotenvFile) {
     if (file_exists($dotenvFile)) {
