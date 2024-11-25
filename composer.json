@@ -10,14 +10,18 @@
         }
     ],
     "require": {
-        "php": ">=7.2.5",
-        "symfony/dotenv": ">=5.4"
+        "php": "^8.3",
+        "psr/container": "^2.0",
+        "symfony/dotenv": "^7.1"
     },
     "minimum-stability": "stable",
     "autoload": {
         "files": [
-            "src/autoload.php"
-        ]
+            "config/autoload.php"
+        ],
+        "psr-4": {
+            "CoiSA\\Dotenv\\": "src/"
+        }
     },
     "autoload-dev": {
         "psr-4": {
@@ -28,6 +32,7 @@
         "sort-packages": true
     },
     "require-dev": {
+        "coisa/php-cs-fixer": "^2.1",
         "friendsofphp/php-cs-fixer": "^3.4",
         "php-parallel-lint/php-parallel-lint": "^1.3",
         "phpunit/phpunit": "^9.5"
